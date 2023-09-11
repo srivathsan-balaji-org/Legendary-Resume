@@ -1,4 +1,4 @@
-#Checking if a S3 bucket already exist in the same name
+#Creating and updating the S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
   bucket = var.bucketname
 }
