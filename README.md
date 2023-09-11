@@ -51,9 +51,11 @@ AWS CLI
 
 ## Contributing
 
+/*
 Contributions are welcome! Please open a pull request if you have any improvements or bug fixes.
 If there is someone I should mention, it's none other than the legen wait for it, dary Barney Stinson
+*/
 
 ## License
 
-This project is licensed under the MIT License.
+## This project is licensed under the MIT License.
