@@ -1,5 +1,4 @@
-# Sample workflow to access AWS resources when workflow is tied to branch
-# The workflow Creates static website using aws s3
+# The workflow Creates static website using aws s3 
 name: AWS example workflow
 on:
   push
@@ -26,3 +25,15 @@ jobs:
       - name:  Copy index.html to s3
         run: |
           aws s3 ls
+      
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Initialize Terraform
+        working-directory: ./Terraform  # Specify the path to your Terraform folder
+        run: terraform init
+
+      - name: Apply Terraform
+        working-directory: ./Terraform  # Specify the path to your Terraform folder
+        run: terraform apply -auto-approve
+
