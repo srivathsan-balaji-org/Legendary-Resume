@@ -1,3 +1,4 @@
+/*
 #Creating and updating the S3 bucket in AWS
 resource "aws_s3_bucket" "my_bucket" {
   bucket = var.bucketname
@@ -29,7 +30,7 @@ resource "aws_s3_bucket_acl" "example" {
   bucket = aws_s3_bucket.my_bucket.id
   acl    = "public-read"
 }
-
+*/
 resource "aws_s3_object" "index" {
   bucket = aws_s3_bucket.my_bucket.id
   key = "index.html"
