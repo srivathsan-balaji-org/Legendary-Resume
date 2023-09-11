@@ -38,6 +38,7 @@ To get started, follow these steps:
 
 ## Usage
 
+Before running, make changes to the variables.tf files according to your requirement.
 Requirements
 Terraform >= 0.15.0
 AWS CLI
