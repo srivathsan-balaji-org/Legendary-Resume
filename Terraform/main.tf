@@ -1,7 +1,3 @@
-variable "bucketname" {
-  description = "Name for the S3 bucket"
-}
-
 data "aws_s3_bucket" "existing_bucket" {
   bucket = var.bucketname
 }
