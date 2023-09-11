@@ -1,4 +1,3 @@
-/*
 #Creating and updating the S3 bucket in AWS
 resource "aws_s3_bucket" "my_bucket" {
   bucket = var.bucketname
@@ -30,7 +29,28 @@ resource "aws_s3_bucket_acl" "example" {
   bucket = aws_s3_bucket.my_bucket.id
   acl    = "public-read"
 }
-*/
+
+#Adding ACL to the bucket policy
+resource "aws_s3_bucket_policy" "bucket_policy" {
+  bucket = var.bucketname  # Replace with your bucket name
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Sid       = "Enable ACLs",
+        Effect    = "Allow",
+        Principal = "*",
+        Action    = [
+          "s3:PutBucketAcl",
+          "s3:GetBucketAcl",
+        ],
+        Resource  = aws_s3_bucket.my_bucket.ARN ,  # Replace with your bucket ARN
+      },
+    ],
+  })
+}
+
 resource "aws_s3_object" "index" {
   bucket = aws_s3_bucket.my_bucket.id
   key = "index.html"
