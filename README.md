@@ -35,6 +35,9 @@ To get started, follow these steps:
 
    ```bash
    git clone https://github.com/srivathsan-balaji-org/Legendary-Resume.git
+   cd Terraform
+   terraform init
+   terraform apply
 
 ## Usage
 
@@ -43,19 +46,13 @@ Requirements
 Terraform >= 0.15.0
 AWS CLI
 
---Installation--
-   ```bash
-  cd Terraform
-  terraform init
-  terraform apply
-
 ## Contributing
 
-/*
+
 Contributions are welcome! Please open a pull request if you have any improvements or bug fixes.
 If there is someone I should mention, it's none other than the legen wait for it, dary Barney Stinson
-*/
+
 
 ## License
 
-## This project is licensed under the MIT License.
+This project is licensed under the MIT License.
