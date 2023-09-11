@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivathsan's Legendary Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS animations */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Apply animations to specific elements */
+        h1, p {
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        li {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Additional styling */
+        body {
+            background-color: #ff69b4; /* Hot Pink */
+        }
+
+        header {
+            background-color: #0d98ba; /* Blue */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            max-width: 150px;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="profile-img" src="https://s3.amazonaws.com/resume.marveltenant.tech/profile.png" alt="Srivathsan's Profile Picture as Barney">
+        <h1>Welcome to Srivathsan's Legendary Portfolio</h1>
+        <p>As legendary as Barney Stinson's resume! <span class="emoji">😎🚀</span></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Srivathsan, a legend in the making. I suit up, I bro out, and I code like a boss. My life is a series of epic adventures, just like Barney Stinson's. <span class="emoji">🕺💼💻</span></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Awesome coder <span class="emoji">💻</span></li>
+            <li>Suit up expert <span class="emoji">👔</span></li>
+            <li>Legendary storyteller <span class="emoji">📖</span></li>
+            <li>Bro-tastic communicator <span class="emoji">🗣️</span></li>
+            <li>Master of high fives <span class="emoji">🙌</span></li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Project 1: Legendary Code</h3>
+            <p>This project was so legendary that it made the internet explode! It involved coding, suiting up, and bro-ing out. <span class="emoji">💥🚀</span></p>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Epic Suits</h3>
+            <p>I designed the most epic suits you've ever seen. They were so awesome that even Barney would be jealous. <span class="emoji">👔🕺</span></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to be part of my legendary journey, shoot me an email at <a href="mailto:legendary@srivathsan.com">legendary@srivathsan.com</a> <span class="emoji">✉️</span></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Srivathsan's Legendary Portfolio</p>
+    </footer>
+</body>
+</html>
