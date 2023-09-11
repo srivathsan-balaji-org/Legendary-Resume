@@ -1,4 +1,4 @@
-#Creating and updating the S3 bucket
+#Creating and updating the S3 bucket in AWS
 resource "aws_s3_bucket" "my_bucket" {
   bucket = var.bucketname
 }
