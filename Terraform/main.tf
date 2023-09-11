@@ -1,10 +1,5 @@
-data "aws_s3_bucket" "existing_bucket" {
-  bucket = var.bucketname
-}
-
 #Checking if a S3 bucket already exist in the same name
 resource "aws_s3_bucket" "my_bucket" {
-  count    = data.aws_s3_bucket.existing_bucket ? 0 : 1
   bucket = var.bucketname
 }
 
