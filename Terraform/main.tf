@@ -32,24 +32,24 @@ resource "aws_s3_bucket_acl" "example" {
 
 resource "aws_s3_object" "index" {
   bucket = aws_s3_bucket.my_bucket.id
-  key = "./Terraform/index.html"
-  source = "./Terraform/index.html"
+  key = "index.html"
+  source = "index.html"
   acl = "public-read"
   content_type = "text/html"
 }
 
 resource "aws_s3_object" "error" {
   bucket = aws_s3_bucket.my_bucket.id
-  key = "./Terraform/error.html"
-  source = "./Terraform/error.html"
+  key = "error.html"
+  source = "error.html"
   acl = "public-read"
   content_type = "text/html"
 }
 
 resource "aws_s3_object" "profile" {
   bucket = aws_s3_bucket.my_bucket.id
-  key = "./Terraform/profile.png"
-  source = "./Terraform/profile.png"
+  key = "profile.png"
+  source = "profile.png"
   acl = "public-read"
 }
 
