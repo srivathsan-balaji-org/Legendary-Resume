@@ -45,7 +45,7 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
           "s3:PutBucketAcl",
           "s3:GetBucketAcl",
         ],
-        Resource  = aws_s3_bucket.my_bucket.arn,  # Replace with your bucket ARN 
+        Resource  = aws_s3_bucket.my_bucket.arn,  # Replace with your bucket ARN in TF
       },
     ],
   })
